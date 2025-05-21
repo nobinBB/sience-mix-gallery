@@ -208,6 +208,7 @@ a:focus {
 /* 1枚目のスライド */
 .vertical-slider__slide:nth-child(1) {
   background-color: #fa5457;
+  background-image: url("https://nobinbb.github.io/sience-mix-gallery/assets/img/top.png");
 
 }
 

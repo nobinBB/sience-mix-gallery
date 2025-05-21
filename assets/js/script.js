@@ -15,6 +15,7 @@ const verticalSlider = new Swiper(".vertical-slider", {
   pagination: {
     el: ".vertical-slider__pagination",
     type: "bullets",
+    loop: true,
     clickable: true,
   },
 });
