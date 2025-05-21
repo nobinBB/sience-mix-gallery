@@ -219,118 +219,118 @@ a:focus {
 /* 2枚目のスライド */
 .vertical-slider__slide:nth-child(2) {
   background-color: #fa8925;
-  background-image: url("/assets/img/1.png");
+  background-image: url("./assets/img/1.png");
 
 }
 
 /* 3枚目のスライド */
 .vertical-slider__slide:nth-child(3) {
   background-color: #f6d51f;
-  background-image: url("/assets/img/3.png");
+  background-image: url("./assets/img/3.png");
   /* 明るい黄色 */
 }
 
 /* 4枚目のスライド */
 .vertical-slider__slide:nth-child(4) {
   background-color: #01b4bc;
-  background-image: url("/assets/img/4.png");
+  background-image: url("./assets/img/4.png");
   /* 鮮やかなターコイズ */
 }
 
 /* 5枚目のスライド */
 .vertical-slider__slide:nth-child(5) {
   background-color: #5fa55a;
-  background-image: url("/assets/img/5.png");
+  background-image: url("./assets/img/5.png");
   /* 柔らかいグリーン */
 }
 
 /* 6枚目のスライド */
 .vertical-slider__slide:nth-child(6) {
   background-color: #e74c3c;
-  background-image: url("/assets/img/6.png");
+  background-image: url("./assets/img/6.png");
   /* ビビッドレッド */
 }
 
 /* 7枚目のスライド */
 .vertical-slider__slide:nth-child(7) {
-  background-image: url("/assets/img/7.png");
+  background-image: url("./assets/img/7.png");
   background-color: #8e44ad;
   /* ディープパープル */
 }
 
 /* 8枚目のスライド */
 .vertical-slider__slide:nth-child(8) {
-  background-image: url("/assets/img/8.png");
+  background-image: url("./assets/img/8.png");
   background-color: #27ae60;
   /* 鮮やかなグリーン */
 }
 
 /* 9枚目のスライド */
 .vertical-slider__slide:nth-child(9) {
-  background-image: url("/assets/img/9.png");
+  background-image: url("./assets/img/9.png");
   background-color: #2980b9;
   /* ディープブルー */
 }
 
 /* 10枚目のスライド */
 .vertical-slider__slide:nth-child(10) {
-  background-image: url("/assets/img/10.png");
+  background-image: url("./assets/img/10.png");
   background-color: #ff6f61;
   /* コーラルピンク */
 }
 
 /* 11枚目のスライド */
 .vertical-slider__slide:nth-child(11) {
-  background-image: url("/assets/img/11.png");
+  background-image: url("./assets/img/11.png");
   background-color: #9b59b6;
   /* 鮮やかなパープル */
 }
 
 /* 12枚目のスライド */
 .vertical-slider__slide:nth-child(12) {
-  background-image: url("/assets/img/12.png");
+  background-image: url("./assets/img/12.png");
   background-color: #e67e22;
   /* ビビッドオレンジ */
 }
 
 /* 13枚目のスライド */
 .vertical-slider__slide:nth-child(13) {
-  background-image: url("/assets/img/13.png");
+  background-image: url("./assets/img/13.png");
   background-color: #3498db;
   /* 明るいブルー */
 }
 
 /* 14枚目のスライド */
 .vertical-slider__slide:nth-child(14) {
-  background-image: url("/assets/img/14.png");
+  background-image: url("./assets/img/14.png");
   background-color: #e91e63;
   /* ビビッドピンク */
 }
 
 /* 15枚目のスライド */
 .vertical-slider__slide:nth-child(15) {
-  background-image: url("/assets/img/15.png");
+  background-image: url("./assets/img/15.png");
   background-color: #1abc9c;
   /* ミントターコイズ */
 }
 
 /* 16枚目のスライド */
 .vertical-slider__slide:nth-child(16) {
-  background-image: url("/assets/img/16.png");
+  background-image: url("./assets/img/16.png");
   background-color: #f1c40f;
   /* 明るいイエロー */
 }
 
 /* 17枚目のスライド */
 .vertical-slider__slide:nth-child(17) {
-  background-image: url("/assets/img/17.png");
+  background-image: url("./assets/img/17.png");
   background-color: #2ecc71;
   /* エメラルドグリーン */
 }
 
 /* 18枚目のスライド */
 .vertical-slider__slide:nth-child(18) {
-  background-image: url("/assets/img/18.png");
+  background-image: url("./assets/img/18.png");
   background-color: #d35400;
   /* ディープオレンジ */
 }
