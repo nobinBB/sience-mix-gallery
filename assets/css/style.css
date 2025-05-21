@@ -1,0 +1,437 @@
+/* Google Fonts読み込み */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: initial;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* 簡易リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #4FFF92;
+  outline: none;
+
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+a:active {
+  outline: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+
+
+
+.container {
+  position: relative;
+  margin-top: 40px;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* スライダー全体 */
+.vertical-slider {
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+/* スライド */
+.vertical-slider__slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-label {
+  position: relative;
+  top: 30%;
+  left: 25%;
+}
+
+.title {
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.spanCl {
+  font-size: 0.4em;
+  line-height: 1;
+}
+.linkTtl{
+  font-size: 1.5em;
+}
+
+
+
+@media (max-width: 450px) {
+  .slide-label {
+    display: block;
+    bottom: 30%;
+    top: 40%;
+    left:inherit;
+    right: 30%;
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 0.35em;
+    bottom: initial;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .spanCl {
+    font-size: 0.15em;
+    bottom: initial;
+
+  }
+}
+
+/* 1枚目のスライド */
+.vertical-slider__slide:nth-child(1) {
+  background-color: #fa5457;
+
+}
+
+
+
+
+
+
+/* 2枚目のスライド */
+.vertical-slider__slide:nth-child(2) {
+  background-color: #fa8925;
+  background-image: url("/assets/img/1.png");
+
+}
+
+/* 3枚目のスライド */
+.vertical-slider__slide:nth-child(3) {
+  background-color: #f6d51f;
+  background-image: url("/assets/img/3.png");
+  /* 明るい黄色 */
+}
+
+/* 4枚目のスライド */
+.vertical-slider__slide:nth-child(4) {
+  background-color: #01b4bc;
+  background-image: url("/assets/img/4.png");
+  /* 鮮やかなターコイズ */
+}
+
+/* 5枚目のスライド */
+.vertical-slider__slide:nth-child(5) {
+  background-color: #5fa55a;
+  background-image: url("/assets/img/5.png");
+  /* 柔らかいグリーン */
+}
+
+/* 6枚目のスライド */
+.vertical-slider__slide:nth-child(6) {
+  background-color: #e74c3c;
+  background-image: url("/assets/img/6.png");
+  /* ビビッドレッド */
+}
+
+/* 7枚目のスライド */
+.vertical-slider__slide:nth-child(7) {
+  background-image: url("/assets/img/7.png");
+  background-color: #8e44ad;
+  /* ディープパープル */
+}
+
+/* 8枚目のスライド */
+.vertical-slider__slide:nth-child(8) {
+  background-image: url("/assets/img/8.png");
+  background-color: #27ae60;
+  /* 鮮やかなグリーン */
+}
+
+/* 9枚目のスライド */
+.vertical-slider__slide:nth-child(9) {
+  background-image: url("/assets/img/9.png");
+  background-color: #2980b9;
+  /* ディープブルー */
+}
+
+/* 10枚目のスライド */
+.vertical-slider__slide:nth-child(10) {
+  background-image: url("/assets/img/10.png");
+  background-color: #ff6f61;
+  /* コーラルピンク */
+}
+
+/* 11枚目のスライド */
+.vertical-slider__slide:nth-child(11) {
+  background-image: url("/assets/img/11.png");
+  background-color: #9b59b6;
+  /* 鮮やかなパープル */
+}
+
+/* 12枚目のスライド */
+.vertical-slider__slide:nth-child(12) {
+  background-image: url("/assets/img/12.png");
+  background-color: #e67e22;
+  /* ビビッドオレンジ */
+}
+
+/* 13枚目のスライド */
+.vertical-slider__slide:nth-child(13) {
+  background-image: url("/assets/img/13.png");
+  background-color: #3498db;
+  /* 明るいブルー */
+}
+
+/* 14枚目のスライド */
+.vertical-slider__slide:nth-child(14) {
+  background-image: url("/assets/img/14.png");
+  background-color: #e91e63;
+  /* ビビッドピンク */
+}
+
+/* 15枚目のスライド */
+.vertical-slider__slide:nth-child(15) {
+  background-image: url("/assets/img/15.png");
+  background-color: #1abc9c;
+  /* ミントターコイズ */
+}
+
+/* 16枚目のスライド */
+.vertical-slider__slide:nth-child(16) {
+  background-image: url("/assets/img/16.png");
+  background-color: #f1c40f;
+  /* 明るいイエロー */
+}
+
+/* 17枚目のスライド */
+.vertical-slider__slide:nth-child(17) {
+  background-image: url("/assets/img/17.png");
+  background-color: #2ecc71;
+  /* エメラルドグリーン */
+}
+
+/* 18枚目のスライド */
+.vertical-slider__slide:nth-child(18) {
+  background-image: url("/assets/img/18.png");
+  background-color: #d35400;
+  /* ディープオレンジ */
+}
+
+/* SP時の文字サイズ調整 */
+/* @media (max-width: 599px) {
+  .vertical-slider__slide {
+    font-size: 16vw;
+  }
+} */
+
+.swiper-pagination-bullet {
+  width: 12px;
+  /* 丸粒の幅（デフォルトは通常8px程度） */
+  height: 12px;
+  /* 丸粒の高さ */
+  background: #000;
+  /* 背景色（必要に応じて変更） */
+  opacity: 0.7;
+  /* 非アクティブ時の透明度 */
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px;
+  /* アクティブな丸粒の幅 */
+  height: 12px;
+  /* アクティブな丸粒の高さ */
+  background: #007aff;
+  /* アクティブ時の色（例: 青） */
+  opacity: 1;
+  /* アクティブ時の透明度 */
+}
+
+
+/* リンクボックスコンテナ */
+.link-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  width: 90%;
+  justify-content: center;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* 個々のリンクボックス */
+.link-box {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ホバーエフェクト */
+.link-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* アイコンスタイル */
+.link-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+/* 説明文スタイル */
+.link-box p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .link-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.note-logo{
+  width: 60px;
+  height: auto;
+}
+
+.top-return{
+      bottom: 0;
+      top: initial;
+      padding-bottom: initial;
+}
+.top-return .link-box p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
