@@ -21,6 +21,9 @@ a {
   text-decoration: none;
   color: #4FFF92;
   outline: none;
+  text-decoration: none; 
+  position: relative; 
+  transition: color 0.3s ease; 
 
 }
 
@@ -38,6 +41,24 @@ a:focus {
   outline: none;
 }
 
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 9px;
+  background-color: #007bff; 
+  bottom: 0; 
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%; /* ホバー時に下線が全幅に */
+}
+
+a:hover {
+  color: #007bff; /* ホバー時に文字色を変更 */
+}
 
 
 .container {
@@ -168,6 +189,7 @@ a:focus {
   left: 0;
 }
 
+
 .spanCl {
   font-size: 0.4em;
   line-height: 1;
@@ -193,6 +215,8 @@ a:focus {
   .title {
     font-size: 0.35em;
     bottom: initial;
+    top: initial;
+    right: inherit;;
 
   }
 }
